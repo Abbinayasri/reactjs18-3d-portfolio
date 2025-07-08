@@ -2,7 +2,7 @@
 import { motion } from "framer-motion";
 import { styles } from "../../constants/styles";
 import { fadeIn, textVariant } from "../../utils/motion";
-import { Header } from "../atoms/Header";
+
 import { config as appConfig } from "../../constants/config";
 
 interface SocialCardProps {
