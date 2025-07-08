@@ -33,20 +33,20 @@ type TConfig = {
   sections: {
     about: Required<TSection>;
     experience: TSection;
-    feedbacks: TSection;
+    sociallinks: TSection;
     works: Required<TSection>;
   };
 };
 
 export const config: TConfig = {
   html: {
-    title: "John Doe — 3D Portfolio",
-    fullName: "John Doe",
-    email: "johndoe@mail.com",
+    title: "Abbinaya sri — 3D Portfolio",
+    fullName: "Abbinaya sri s",
+    email: "sabbi2412@gmail.com",
   },
   hero: {
-    name: "John Doe",
-    p: ["I develop 3D visuals, user", "interfaces and web applications"],
+    name: "Abbinaya sri",
+    p: ["I craft digital experiences through thoughtful UI/UX design ,web development and 3D models"],
   },
   contact: {
     p: "Get in touch",
@@ -67,20 +67,19 @@ export const config: TConfig = {
     about: {
       p: "Introduction",
       h2: "Overview.",
-      content: `I'm a skilled software developer with experience in TypeScript and
-      JavaScript, and expertise in frameworks like React, Node.js, and
-      Three.js. I'm a quick learner and collaborate closely with clients to
-      create efficient, scalable, and user-friendly solutions that solve
-      real-world problems. Let's work together to bring your ideas to life!`,
+      content: `I'm a designer and web developer passionate about blending creativity with technology to craft meaningful, user-centered digital experiences. From intuitive UI/UX design and interactive web solutions to immersive 3D modeling with Blender, explore my journey, projects, and process.`,
     },
     experience: {
       p: "What I have done so far",
-      h2: "Work Experience.",
+      h2: "Achievements and Work Experience.",
     },
-    feedbacks: {
-      p: "What others say",
-      h2: "Testimonials.",
-    },
+   sociallinks: {
+  p: "",
+  h2: "",
+  content: "Connect with me.",
+},
+
+
     works: {
       p: "My work",
       h2: "Projects.",

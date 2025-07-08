@@ -6,6 +6,11 @@ import type {
   TTestimonial,
   TProject,
 } from "../types";
+import sih from "../assets/company/sih.png";
+import intern from "../assets/company/intern.jpg";
+import idea from "../assets/company/idea.png";
+import blender1 from "../assets/tech/blender1.png";
+import unity from "../assets/tech/unity.png";
 
 import {
   mobile,
@@ -28,11 +33,13 @@ import {
   starbucks,
   tesla,
   shopify,
+  
   carrent,
   jobit,
   tripguide,
   threejs,
 } from "../assets";
+
 
 export const navLinks: TNavLink[] = [
   {
@@ -51,24 +58,37 @@ export const navLinks: TNavLink[] = [
 
 const services: TService[] = [
   {
-    title: "Web Developer",
+    title: "UI/UX Design",
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "Web Development",
     icon: mobile,
   },
   {
-    title: "Backend Developer",
+    title: "3D Model-Blender",
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "Unity Developer",
     icon: creator,
   },
 ];
 
 const technologies: TTechnology[] = [
+  {
+    name: "figma",
+    icon: figma,
+  },
+  {
+    name: "blender",
+    icon: blender1,
+  },
+  {
+    name: "unity",
+    icon: unity,
+  },
+
   {
     name: "HTML 5",
     icon: html,
@@ -82,100 +102,52 @@ const technologies: TTechnology[] = [
     icon: javascript,
   },
   {
-    name: "TypeScript",
-    icon: typescript,
-  },
-  {
     name: "React JS",
     icon: reactjs,
   },
-  {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
-  },
-  {
-    name: "Node JS",
-    icon: nodejs,
-  },
-  {
-    name: "MongoDB",
-    icon: mongodb,
-  },
-  {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
-    name: "git",
-    icon: git,
-  },
-  {
-    name: "figma",
-    icon: figma,
-  },
-  {
-    name: "docker",
-    icon: docker,
-  },
+  
+  
 ];
 
 const experiences: TExperience[] = [
   {
-    title: "React.js Developer",
-    companyName: "Starbucks",
-    icon: starbucks,
-    iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    title: "Smart India Hackathon ",
+    companyName: "1st Prize",
+     icon: sih,
+
+    iconBg: "white",
+    date: "2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Participated and won first prize at the college level of the prestigious Smart India Hackathon 2023.",
+      "Developed a Virtual Zoo for kids to enhance learning through immersive AR/VR experiences under the Smart Education category.",
+      
     ],
   },
   {
-    title: "React Native Developer",
-    companyName: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    title: "Certificate Of Experience",
+    companyName: "Design Scholar Intern",
+    icon: intern,
+    iconBg: "white",
+    date: "Mar 2024 - Oct 2024",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Successfully completed the 6-month Chalkpiece Design Scholars Program focused on UX/UI Design, under the mentorship of experienced design professionals.",
+      
+      "Awarded by Chalkpiece Design Education Trust, an initiative empowering creativity and innovation through design education.",
     ],
   },
   {
-    title: "Web Developer",
-    companyName: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    title: "Ideathon - Kongu Engineering College",
+    companyName: "1st Prize",
+    icon: idea,
+    iconBg: "white",
+    date: "2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Won first prize in the Ideathon conducted by the CSD department of Kongu Engineering College.",
+      "Developed an IoT Automated Object Recognition Glass to assist the visually impaired by identifying and recognizing objects in their surroundings.",
+      
     ],
   },
-  {
-    title: "Full stack Developer",
-    companyName: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
+  
 ];
 
 const testimonials: TTestimonial[] = [
@@ -207,67 +179,105 @@ const testimonials: TTestimonial[] = [
 
 const projects: TProject[] = [
   {
-    name: "Car Rent",
+    name: "Fitness Tracker Website",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      " A full-stack fitness website using React and Firebase, featuring personalized workout plans, daily challenges, and user profiles. Designed for intuitive user experience to help users stay motivated.",
     tags: [
+      
+      {
+        name: "html/css",
+        color: "green-text-gradient",
+      },
+      {
+        name: "javascript",
+        color: "pink-text-gradient",
+      },
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
+        name: "firebase",
         color: "pink-text-gradient",
       },
+
     ],
     image: carrent,
-    sourceCodeLink: "https://github.com/",
+    sourceCodeLink: "https://github.com/Abbinayasri/fitness_tracker",
   },
   {
-    name: "Job IT",
+    name: "Reunion Event Website",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "The Flashback Events is a digital marketing and event management platform designed specifically to organize unforgettable batch reunions and get-togethers.",
     tags: [
+      {
+        name: "html/css",
+        color: "pink-text-gradient",
+      },
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "javascript",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: jobit,
-    sourceCodeLink: "https://github.com/",
-  },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "nextjs",
+        name: "firebase",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "Email.js",
+        color: "green-text-gradient",
+      },
+
+      
+    ],
+    image: jobit,
+    sourceCodeLink: "https://github.com/Abbinayasri/TheFlashbackEvents",
+  },
+  {
+    name: "Iot Object Recognition System",
+    description:
+      "Designed an automated object detection and recognition system using IoT technologies.Aimed to assist visually impaired users by providing real-time audio feedback for identified objects.",
+    tags: [
+      {
+        name: "Python",
+        color: "blue-text-gradient",
+      },
+      
+      
+    ],
+    image: tripguide,
+    sourceCodeLink: "https://github.com/Abbinayasri/Object-identification-and-detection",
+  },
+  {
+    name: "View All Projects",
+    description: "Explore all my design works, where creativity meets functionality.From crafting intuitive wireframes to developing interactive prototypes and  immersive 3D models, each project reflects thoughtful design and purposeful storytelling.",
+    tags: [{
+       name: "figma",
+        color: "blue-text-gradient",
+    },
+    {
+        name: "canva",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "blender",
         color: "green-text-gradient",
       },
       {
-        name: "css",
-        color: "pink-text-gradient",
+        name: "html/css",
+        color: "blue-text-gradient",
       },
-    ],
-    image: tripguide,
-    sourceCodeLink: "https://github.com/",
+      {
+        name: "javascript",
+        color: "green-text-gradient",
+      },
+  ],
+    image: redux, // or you can use a custom "view all" icon/image
+    sourceCodeLink: "https://sabbi2412b27b.myportfolio.com/", // Replace with your desired link
+    
   },
 ];
 
