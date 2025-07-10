@@ -11,6 +11,7 @@ import intern from "../assets/company/intern.jpg";
 import idea from "../assets/company/idea.png";
 import blender1 from "../assets/tech/blender1.png";
 import unity from "../assets/tech/unity.png";
+import c from "../assets/tech/c.png";
 
 import {
   mobile,
@@ -21,7 +22,7 @@ import {
   
   html,
   css,
-  reactjs,
+  
   redux,
 
   figma,
@@ -89,13 +90,15 @@ const technologies: TTechnology[] = [
     name: "CSS 3",
     icon: css,
   },
+  
+  
+  {
+    name: "C",
+    icon: c,
+  },
   {
     name: "JavaScript",
     icon: javascript,
-  },
-  {
-    name: "React JS",
-    icon: reactjs,
   },
   
   
